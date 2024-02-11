@@ -1,0 +1,97 @@
+.header--nav {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header--nav > nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.company--name--logo {
+  font-size: 1.5rem;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.company--name--logo > img {
+  width: 30px;
+  height: auto;
+}
+.company--name--logo > h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--mainGreen);
+  text-decoration: none;
+}
+.hamburger,
+.close {
+  display: none;
+}
+.nav--links {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.nav--links > a {
+  color: var(--mainGreen);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in;
+}
+.nav--links > a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.nav--links > a:active {
+  color: black;
+}
+
+.nav--links > .get--in--touch--button {
+  padding: 10px 25px;
+  background-color: var(--mainGreen);
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  color: white;
+  font-weight: 600;
+}
+.get--in--touch--button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .company--name--logo {
+    font-size: 0.9rem;
+  }
+  .company--name--logo > img {
+    width: 20px;
+  }
+  .nav--links {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    z-index: 2;
+    transition: all 0.4s ease;
+    transform: translateX(-100vw);
+  }
+  .hamburger,
+  .close {
+    display: block;
+  }
+  .header--nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

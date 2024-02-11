@@ -1,0 +1,133 @@
+.form--container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "Form";
+  margin: 0 20px;
+  overflow: hidden;
+  place-items: center;
+}
+.form--container > img {
+  display: none;
+  background-repeat: no-repeat;
+  grid-area: Image;
+}
+.form--container > .page--form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mainGreen);
+  grid-area: Form;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 33px;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+.form--header {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 35px;
+  color: white;
+  text-align: center;
+}
+.form--input {
+  display: block;
+  margin-bottom: 20px;
+}
+.red--text {
+  font-weight: 700;
+  color: red;
+}
+.form--label {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+.name--container,
+.mail,
+.number,
+.mail--number--container,
+.message--container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.page--form input,
+.page--form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 481px) {
+  .form--container {
+    grid-template-rows: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Image Form";
+    margin: 60px;
+  }
+  .form--container > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .page--form {
+    padding: 30px;
+  }
+  .mail--number--container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  button {
+    padding: 10px;
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  .form--container > .page--form {
+    font-size: 24px;
+  }
+  .form--header {
+    font-size: 55px;
+  }
+  form .form--input {
+    padding: 10px;
+  }
+}
+
+.page--form > h1,
+.page--form > div,
+.page--form > button {
+  animation: slideUpFast 1s ease 2s 1 normal forwards;
+}
+@keyframes slideUpFast {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.submitted--success {
+  background-color: white;
+  color: black;
+  scale: 0.8;
+}

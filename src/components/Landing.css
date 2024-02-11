@@ -1,0 +1,219 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  padding-left: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "CompanyDetails CompanyDetails"
+    "Carousel Carousel";
+  text-wrap: balance;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+header > div {
+  position: absolute;
+  z-index: 1;
+}
+.green--color {
+  color: #79b401;
+}
+.mild--color {
+  color: #777777;
+}
+.company--details {
+  width: 100%;
+  height: 100%;
+  grid-area: CompanyDetails;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.control--buttons {
+  grid-area: Carousel;
+}
+.landing--image--container {
+  display: none;
+}
+.foreground--image {
+  position: absolute;
+}
+.background--image {
+  position: relative;
+}
+section > p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.main--heading {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+.company--motto {
+  font-size: 1.28rem;
+  margin-bottom: 40px;
+}
+
+.company--details > section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 50px;
+}
+.navigation--button--container {
+  width: 100%;
+  height: auto;
+}
+.control--buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.control--buttons > a {
+  color: black;
+  font-weight: 700;
+  font-family: Roboto, "sans-serif";
+}
+.control--buttons > a:active {
+  color: #79b401;
+}
+.navigation--button {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 15px;
+  background-color: #79b401;
+  border: 1px solid #79b401;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.navigation--button--container > a:hover {
+  background-color: transparent;
+  border: 2px solid #79b401;
+  color: white;
+}
+.header--bg--image {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.2);
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+section > .bold {
+  font-weight: 700;
+}
+.right--image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .company--details > section {
+    margin-left: 50px;
+  }
+  section > p {
+    font-size: 18px;
+  }
+  .main--heading {
+    font-size: 100px;
+  }
+  .control--buttons {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .landing--image--container {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    animation: toLeft 1s ease 2s 1 normal forwards;
+  }
+  .foreground--image {
+    position: relative;
+  }
+  .foreground--image > img {
+    position: relative;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 15%;
+    box-shadow: 0 0 0 7px #79b401;
+  }
+  .right--image {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  .right--image > img {
+    width: 450px;
+    height: auto;
+  }
+  .right--image > img {
+    display: none;
+  }
+  .right--image > video {
+    width: 450px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+}
+
+section > p,
+.main--heading {
+  animation: myAnim 2s ease 2s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header--bg--image {
+  animation: bgAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes bgAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.submitted--success {
+  font-weight: 700;
+  color: #79b401;
+  background-color: black;
+  padding: 0 10px;
+}

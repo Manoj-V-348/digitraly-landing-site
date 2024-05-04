@@ -73,7 +73,7 @@
   color: black;
 }
 .why1 > h2:hover {
-  color: var(--mainGreen);
+  color: #ef3f38;
   cursor: pointer;
 }
 
@@ -81,7 +81,7 @@
   color: black;
 }
 .why3 > h2:hover {
-  color: var(--mainGreen);
+  color: #ef3f38;
   cursor: pointer;
 }
 .why--details > p {
@@ -94,10 +94,10 @@
 }
 .why1,
 .why3 > h1 {
-  color: var(--mainGreen);
+  color: #ef3f38;
 }
 .why2 {
-  background-color: var(--mainGreen);
+  background-color: #ef3f38;
   color: white;
 }
 .why2 > p {
@@ -113,7 +113,7 @@
 }
 .why--details .read--more {
   margin-top: 10px;
-  color: #3366cc;
+  color: #ffe602;
   margin-left: 70%;
   font-size: 14px;
 }

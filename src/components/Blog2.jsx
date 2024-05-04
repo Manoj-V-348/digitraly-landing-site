@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./Blog.css";
 
-import blogImg2 from "../images/blog2.png";
+import video from "../images/blog/video.png";
 
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -12,103 +12,75 @@ function Blog2() {
     aos.init({ duration: 1000 });
   }, []);
 
-  const [readMore, setReadMore] = useState(false);
-
-  function readMoreText() {
-    return (
-      <>
-        <p className="blog--text" data-aos="fade-right">
-          Execute seamless technology initiatives on a global scale. Navigate
-          diverse markets and regulatory landscapes for unified solutions.
-          Ensure consistent and scalable implementation across geographies.
-        </p>
-
-        <div className="blog2--image--wrapper" data-aos="fade-up">
-          <img src={blogImg2} alt="blog-image" className="blog--image" />
-        </div>
-
-        <p className="blog--text" data-aos="fade-right">
-          <span className="bold--text">Holistic Cybersecurity Solutions:</span>
-          <br /> Develop and implement robust cybersecurity frameworks. Protect
-          organizations against evolving cyber threats. Safeguard critical
-          assets and maintain data integrity.
-        </p>
-
-        <p className="blog--text" data-aos="fade-right">
-          <span className="bold--text">Stakeholder Collaboration:</span>
-          <br /> Foster collaborative relationships with key stakeholders. Align
-          technology initiatives with broader business objectives. Ensure that
-          IT strategies deliver tangible value to the entire organization.
-        </p>
-
-        <p className="blog--text" data-aos="fade-right">
-          <span className="bold--text">Industry Recognition:</span>
-          <br /> Digitraly is celebrated for its impact on businesses worldwide.
-          Our commitment to excellence and innovation positions us as a trusted
-          partner for CXOs seeking transformative solutions.
-        </p>
-
-        <div className="connect--with--digitraly" data-aos="fade-up">
-          <p className="bold--text">Connect with Digitraly:</p>
-          <p className="blog--text">
-            Digitraly stands at the forefront of CXO consulting, dedicated to
-            shaping the digital future of businesses by providing strategic
-            technology and resource optimization services.
-          </p>
-        </div>
-      </>
-    );
-  }
-
-  function toggleReadMore() {
-    setReadMore((prev) => !prev);
-  }
-
   return (
-    <div className="blog--contents--wrapper">
-      <p className="blog2--main--heading" data-aos="fade-down">
-        <span className="main--green">Digitraly</span> - Empowering CXOs in the
-        Digital Realm
-      </p>
-      <div className="blog--details--container" data-aos="fade-right">
-        <p className="blog--heading">
-          Transformative CXO Consulting for Strategic Technology & Resource
-          Optimization
-        </p>
+    <>
+      <div className="blog--contents--wrapper">
+        <div className="blog--details--container" data-aos="fade-right">
+          <img src={video} alt="" />
+          <p className="blog--heading">
+            The Editor's Eye: Why You Need a Pro to Refine Your Content
+          </p>
+          <p className="blog--text">
+            In today's content-driven world, high-quality writing is essential
+            for brand success. But even the most brilliant ideas can fall flat
+            without proper editing. Here's why a good editor is an invaluable
+            asset:
+          </p>
 
-        <p className="blog--text">
-          <span className="bold--text">Agency Overview:</span>
-          <br /> Digitraly is a leading consultancy firm specializing in CXO
-          advisory services, offering unparalleled expertise in technology and
-          resource optimization. Our mission is to empower business leaders with
-          innovative solutions, enabling them to navigate the complexities of
-          the digital landscape with confidence and strategic foresight.
-        </p>
+          <div className="blog--sub--container">
+            <div className="blog--sub--heading">
+              <h1>Error-Free Communication</h1>
+              <p>
+                A skilled editor ensures your content is free of grammatical
+                errors, typos, and inconsistencies. This maintains
+                professionalism and ensures your message is clear and impactful.
+              </p>
+            </div>
 
-        <p className="blog--text">
-          <span className="bold--text">Strategic Technology Consulting:</span>
-          <br />
-          Craft bespoke technology roadmaps aligned with business objectives.
-          Provide visionary insights on emerging technologies and industry
-          trends. Optimize IT strategies for scalability, efficiency, and
-          competitive advantage.
-        </p>
+            <div className="blog--sub--heading">
+              <h1>Clarity & Concision</h1>
+              <p>
+                Editors help refine your writing for clarity and conciseness.
+                They ensure your message is delivered effectively and resonates
+                with your target audience.
+              </p>
+            </div>
 
-        <p className="blog--text">
-          <span className="bold--text">Resource Optimization:</span>
-          <br />
-          Streamline resource allocation for maximum efficiency and
-          cost-effectiveness. Design and implement scalable solutions to meet
-          evolving business needs. Leverage technology to enhance resource
-          productivity and collaboration.
-        </p>
+            <div className="blog--sub--heading">
+              <h1>Enhanced Flow & Readability</h1>
+              <p>
+                A good editor improves the flow and structure of your content,
+                making it engaging and enjoyable to read. This keeps your
+                audience captivated and wanting more.
+              </p>
+            </div>
 
-        {readMore ? readMoreText() : ""}
-        <p className="blog--read--more--button" onClick={toggleReadMore}>
-          {readMore ? "show less..." : "read more..."}
-        </p>
+            <div className="blog--sub--heading">
+              <h1>SEO Optimization</h1>
+              <p>
+                Editors can optimize your content for search engines by
+                incorporating relevant keywords naturally. This increases your
+                website's visibility and attracts organic traffic.
+              </p>
+            </div>
+
+            <div className="blog--sub--heading">
+              <h1>Stronger Brand Voice</h1>
+              <p>
+                Editors help you develop and maintain a consistent brand voice
+                across all your content. This strengthens brand recognition and
+                builds trust with your audience.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <h1 className="blog--description">
+        SAMP IT boasts a team of experienced editors with a keen eye for detail.
+        We'll refine your content, ensuring it's polished, persuasive, and
+        achieves your marketing goals.
+      </h1>
+    </>
   );
 }
 

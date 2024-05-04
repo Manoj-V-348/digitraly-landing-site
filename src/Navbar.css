@@ -16,7 +16,7 @@
   gap: 15px;
 }
 .company--name--logo > img {
-  width: 30px;
+  width: 50px;
   height: auto;
 }
 .company--name--logo > h1 {
@@ -35,7 +35,7 @@
   gap: 35px;
 }
 .nav--links > a {
-  color: var(--mainGreen);
+  color: #ef3f38;
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
@@ -53,7 +53,7 @@
 
 .nav--links > .get--in--touch--button {
   padding: 10px 25px;
-  background-color: var(--mainGreen);
+  background-color: #ef3f38;
   border-radius: 2px;
   transition: all 0.5s ease;
   color: white;

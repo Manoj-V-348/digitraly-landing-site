@@ -6,6 +6,10 @@ import "aos/dist/aos.css";
 import "./About.css";
 import SubHeader from "./SubHeader";
 
+import dataImg from "../images/about/data.png";
+import contentImg from "../images/about/content.png";
+import WebImg from "../images/about/website.png";
+
 function About() {
   useEffect(() => {
     aos.init({ duration: 1000 });
@@ -16,20 +20,45 @@ function About() {
       <main loading="lazy" data-aos="fade-up">
         <div className="welcome--text" id="main--container">
           <h1>
-            Welcome to Digi<span className="green--color">traly</span>
+            Welcome to SA<span className="green--color">M</span>P IT
           </h1>
           <p className="mild--color">
-            At Digitraly, we transcend traditional digital services - we become
-            your ally in unlocking the boundless potential of the digital era.
-            With a commitment to innovation, personalized strategies, and
-            steadfast reliability, we're on a mission to empower businesses not
-            just to survive but thrive in today's ever-evolving landscape.
+            "At SAMP IT, we combine strategic thinking, creative flair, and
+            technical expertise to deliver exceptional results. We offer a
+            one-stop solution for all your digital marketing needs, saving you
+            time and resources."
             <br />
-            <br /> Embark on a transformative voyage with us, where the horizons
-            of possibilities stretch far and wide, and success is redefined
-            without limits. Explore the myriad ways Digitraly can propel your
-            business towards digital excellence and unparalleled growth.
+            <br />
           </p>
+          <p className="bold--text" id="sets--apart">
+            Here's what sets us apart:
+          </p>
+          <div className="sets--us--apart--container">
+            <div className="sets--us--points">
+              <img src={dataImg} alt="" />
+              <h2>Data-driven approach</h2>
+              <p className="mild--color">
+                We analyze your target audience and competition to create
+                effective strategies.
+              </p>
+            </div>
+
+            <div className="sets--us--points">
+              <img src={contentImg} alt="" />
+              <h2>High-quality content</h2>
+              <p className="mild--color">
+                We craft engaging content that resonates with your audience.
+              </p>
+            </div>
+
+            <div className="sets--us--points">
+              <img src={WebImg} alt="" />
+              <h2>Beautiful & functional websites</h2>
+              <p className="mild--color">
+                Our websites are user-friendly and optimized for search engines.
+              </p>
+            </div>
+          </div>
         </div>
         <p className="about--our--company">About Our Company</p>
         <div className="sub--wrapper">

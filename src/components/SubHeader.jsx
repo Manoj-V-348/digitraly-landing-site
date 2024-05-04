@@ -12,21 +12,21 @@ function SubHeader() {
         <div className="top--details">
           <div className="experience" data-aos="fade-right">
             <p>
-              <span className="big--text">45</span>+
+              <span className="big--text">4</span>+
             </p>
             <p id="years">Years Of Experience</p>
           </div>
           <div className="about--heading--container">
-            <h1>Beyond Boundaries:</h1>
+            <h1>Clickworthy Craftsmanship:</h1>
             <p className="about--sub--heading">
-              Digitraly - Your Partner in Unleashing the Digital Transformation
+              SAMP IT - Your trusted partner in the digital world
             </p>
             <p className="mild--color company--about--details">
-              Digitraly thrives on the dynamic synergy of industry experts,
-              innovators, and visionaries, propelling us towards unparalleled
-              performance. Our devoted professionals ardently strive to deliver
-              remarkable outcomes, embodying a culture of excellence, perpetual
-              learning, and collaborative brilliance.
+              SAMP IT is a full-service digital marketing agency specializing in
+              Social Media Management, Content Creation (written and visual),
+              and Website Design & Development. We empower businesses to build a
+              strong online presence, engage with their target audience, and
+              achieve their marketing goals.
             </p>
           </div>
         </div>
@@ -46,17 +46,21 @@ function SubHeader() {
         </div>
         <div className="tailored--digital">
           <div>
-            <h2 data-aos="fade-up">Tailored digital solutions</h2>
+            <h2 data-aos="fade-up">
+              Engage. Inform. Convert. Your online marketing goals, achieved.
+            </h2>
             <p className="mild--color" data-aos="fade-up">
-              Begin your digital journey with us, where limitless possibilities
-              unfold, and success transforms into an unexplored realm. Discover
-              how Digitraly can propel your business toward digital excellence.
+              By collaborating with SAMP IT, you'll gain a dedicated team of
+              experts who are passionate about helping you achieve your online
+              marketing goals. We'll work closely with you to understand your
+              brand, target audience, and objectives, and develop a customized
+              strategy that delivers results.
             </p>
           </div>
           <div className="mail--support" data-aos="fade-up">
             <Icon
               icon="icon-park-outline:mail-review"
-              color="#79b401"
+              color="#ef3f38"
               width="14"
             />
             <a href="#get--in--touch--container">Get Support</a>

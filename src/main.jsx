@@ -6,11 +6,12 @@ import App from "./App.jsx";
 import Blogpage from "./Blogpage.jsx";
 import Servicepage from "./Servicepage.jsx";
 
-import logo from "/logo.svg";
+import logo from "/samp-it-logo.png";
 import { Icon } from "@iconify/react";
 import { Element } from "react-scroll";
 
 import "./Navbar.css";
+import "./App.css";
 
 const toggleNavLinks = () => {
   const navLinks = document.querySelector(".nav--links");
@@ -38,27 +39,31 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             onClick={toggleNavLinks}
           />
 
-          <div className="nav--links">
-            <Link to="/blog" onClick={toggleNavLinks}>
+          <div className="nav--links ">
+            <Link to="/blog" onClick={toggleNavLinks} className="green--color">
               Blog
             </Link>
-            <Link to="/services" onClick={toggleNavLinks}>
+            <Link
+              to="/services"
+              onClick={toggleNavLinks}
+              className="green--color"
+            >
               Services
             </Link>
 
             {/* Use ScrollLink for smooth scrolling */}
-            <ScrollLink
-              to="get-in-touch"
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqZhfdCxWfzzPRjbDPgqgxXzDLvZsZXwhPXfNvZcNSSngTlZkcqfMbHqZgJkJxWltkwlSV"
               smooth={true}
               duration={500}
-              className="get--in--touch--button"
+              className="get--in--touch--button green--color"
               onClick={toggleNavLinks}
             >
               Get in Touch
-            </ScrollLink>
+            </a>
             <Icon
               icon="mingcute:close-fill"
-              color="#79b401"
+              color="#ef3f38"
               width="24"
               className="close"
               onClick={toggleNavLinks}

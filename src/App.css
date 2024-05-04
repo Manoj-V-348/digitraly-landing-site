@@ -7,6 +7,9 @@
   transition: all 0.3s ease;
 }
 :root {
-  --mainGreen: #79b401;
+  --mainGreen: #ef3f38;
   --mildGray: #777777;
+}
+.italic {
+  font-style: italic;
 }

@@ -5,13 +5,12 @@ import "./Landing.css";
 function HeaderCaption() {
   return (
     <section>
-      <p className="mild--color bold">We create leading Digital Products</p>
-      <h1 className="main--heading">
-        Digi<span className="green--color ">traly</span>
+      <p className="mild--color bold">Crafting Pixels into Perfection</p>
+      <h1 className="main--heading italic">
+        SA<span className="green--color ">M</span>P IT
       </h1>
       <p className="company--motto">
-        Transforming Visions into Digital Realities - Where Expertise Meets
-        Excellence!
+        Your one-stop shop for a thriving online presence
       </p>
     </section>
   );

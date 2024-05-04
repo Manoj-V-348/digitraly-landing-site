@@ -35,10 +35,10 @@ export default function Footer() {
             <div className="info company--mail" data-aos="fade-up">
               <Icon
                 icon="icon-park-outline:mail-review"
-                color="#79b401"
+                color="#ef3f38"
                 width="60"
               />
-              <p>info@digitraly.com</p>
+              <p>sampitoffl@gmail.com</p>
               <img
                 src={bgImg2}
                 alt="bg--image"
@@ -49,10 +49,10 @@ export default function Footer() {
             <div className="info company--location" data-aos="fade-up">
               <Icon
                 icon="mingcute:location-3-fill"
-                color="#79b401"
+                color="#ef3f38"
                 width="60"
               />
-              <p>India, Malaysia</p>
+              <p>India</p>
               <img
                 src={bgImg3}
                 alt="bg--image"
@@ -74,12 +74,12 @@ export default function Footer() {
               </p>
             </div>
             <div className="copyright">
-              <p>Copyright By@ Digitraly 2024</p>
+              <p>Copyright By@ SAMP IT - 2024</p>
               <a href="#">Get Support</a>
             </div>
           </div>
           <a className="scroll--top" href="#header">
-            <Icon icon="bxs:home" color="#79b401" width="50" />
+            <Icon icon="bxs:home" color="#ef3f38" width="50" />
           </a>
         </div>
       </footer>

@@ -8,144 +8,62 @@ import FormImg from "../images/corporate-meeting-change.jpg";
 
 import "./FormComponent.css";
 
+import gmail from "../images/social/gmail.png";
+import insta from "../images/social/instagram.png";
+import facebook from "../images/social/facebook.png";
+import linkedin from "../images/social/linkedin.png";
+import x from "../images/social/x.png";
+
 function FormComponent() {
   useEffect(() => {
     aos.init({ duration: 1000 });
   }, []);
 
-  const [state, handleSubmit] = useForm("mzbndzdb");
-  if (state.succeeded) {
-    return (
-      <div className="form--container" id="form" loading="lazy">
-        <img src={FormImg} alt="form-img" />
-        <form
-          onSubmit={handleSubmit}
-          className="page--form"
-          id="page-form"
-          name="formtag"
-          method="POST"
-        >
-          <p className="submitted--success">FORM SUBMITTED SUCCESSFULLY</p>
-          <h1 className="form--header" data-aos="fade-up">
-            Enquire Now
-          </h1>
-
-          <div className="name--container">
-            <input
-              type="text"
-              placeholder="Name"
-              name="username"
-              id="username"
-              required
-              className="form--input"
-              data-aos="fade-up"
-            />
-          </div>
-
-          <div className="mail--number--container">
-            <div className="mail">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="E-mail"
-                className="form--input"
-                data-aos="fade-up"
-              />
-            </div>
-            <div className="number">
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="E.g.+91 1122334455"
-                className="form--input"
-                data-aos="fade-up"
-              />
-            </div>
-          </div>
-
-          <div className="message--container">
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter your Message..."
-              className="form--input textarea"
-              rows={4}
-              data-aos="fade-up"
-            ></textarea>
-          </div>
-
-          <button data-aos="fade-up">Send Message</button>
-        </form>
-      </div>
-    );
-  }
-
   return (
     <div className="form--container" id="form" loading="lazy">
       <img src={FormImg} alt="form-img" />
-      <form
-        onSubmit={handleSubmit}
-        className="page--form"
-        id="page-form"
-        name="formtag"
-        method="POST"
-      >
+      <section className="page--form" id="page-form">
         <h1 className="form--header" data-aos="fade-up">
-          Enquire Now
+          Connect Now
         </h1>
 
-        <div className="name--container">
-          <input
-            type="text"
-            placeholder="Name"
-            name="username"
-            id="username"
-            required
-            className="form--input"
-            data-aos="fade-up"
-          />
-        </div>
+        <a
+          className="social--media"
+          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqZhfdCxWfzzPRjbDPgqgxXzDLvZsZXwhPXfNvZcNSSngTlZkcqfMbHqZgJkJxWltkwlSV"
+        >
+          <img src={gmail} alt="" className="social--img" />
+          <p className="social--name">Gmail</p>
+        </a>
 
-        <div className="mail--number--container">
-          <div className="mail">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder="E-mail"
-              className="form--input"
-              data-aos="fade-up"
-            />
-          </div>
-          <div className="number">
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              placeholder="E.g.+91 1122334455"
-              className="form--input"
-              data-aos="fade-up"
-            />
-          </div>
-        </div>
+        <a
+          className="social--media"
+          href="https://www.instagram.com/sampitofficial/"
+        >
+          <img src={insta} alt="" className="social--img" />
+          <p className="social--name">Instagram</p>
+        </a>
 
-        <div className="message--container">
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter your Message..."
-            className="form--input textarea"
-            rows={4}
-            data-aos="fade-up"
-          ></textarea>
-        </div>
+        <a
+          className="social--media"
+          href="https://www.facebook.com/profile.php?id=61559128370952"
+        >
+          <img src={facebook} alt="" className="social--img" />
+          <p className="social--name">Facebook</p>
+        </a>
 
-        <button data-aos="fade-up">Send Message</button>
-      </form>
+        <a
+          className="social--media"
+          href="https://www.linkedin.com/in/manoj-v-38a047220/"
+        >
+          <img src={linkedin} alt="" className="social--img" />
+          <p className="social--name">LinkedIn</p>
+        </a>
+
+        <a className="social--media" href="https://twitter.com/home">
+          <img src={x} alt="" className="social--img" />
+          <p className="social--name">X</p>
+        </a>
+      </section>
     </div>
   );
 }

@@ -15,7 +15,7 @@
 .form--container > .page--form {
   display: flex;
   flex-direction: column;
-  background-color: var(--mainGreen);
+  background-color: #ef3f38;
   grid-area: Form;
   align-items: center;
   justify-content: flex-start;
@@ -28,10 +28,28 @@
 .form--header {
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 35px;
   color: white;
   text-align: center;
 }
+.social--media {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.social--media:hover {
+  background-color: #fbac27;
+}
+.social--media > img {
+  width: 35px;
+  height: 100%;
+}
+
 .form--input {
   display: block;
   margin-bottom: 20px;

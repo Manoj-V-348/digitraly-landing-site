@@ -28,8 +28,8 @@ export default function Landing() {
     setText1(false);
   };
 
-  const linkColor1 = text1 ? { color: "#79b401" } : { color: "#000000" };
-  const linkColor2 = text1 ? { color: "#000000" } : { color: "#79b401" };
+  const linkColor1 = text1 ? { color: "#ef3f38" } : { color: "#000000" };
+  const linkColor2 = text1 ? { color: "#000000" } : { color: "#ef3f38" };
 
   return (
     <>
